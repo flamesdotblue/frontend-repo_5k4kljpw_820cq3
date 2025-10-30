@@ -1,5 +1,4 @@
 import { useState, useMemo } from 'react'
-import PropTypes from 'prop-types'
 
 // A resilient image component that tries multiple sources and falls back to a vector plate
 export default function PlateImage({ sources = [], alt = 'License plate', className = '' }) {
@@ -60,10 +59,4 @@ export default function PlateImage({ sources = [], alt = 'License plate', classN
       draggable={false}
     />
   )
-}
-
-PlateImage.propTypes = {
-  sources: PropTypes.arrayOf(PropTypes.string),
-  alt: PropTypes.string,
-  className: PropTypes.string,
 }
